@@ -6,3 +6,6 @@
 //
 
 import Foundation
+
+// JUST the Model.
+// Will not have a reference to anything else
