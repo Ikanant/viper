@@ -13,3 +13,18 @@ import Foundation
 // When the task is completed, the Interactor will just feed back the result to the PRESENTER
 
 // I will be adding an API call through the Interactor
+protocol AnyInteractor {
+    var presenter: AnyPresenter? { get set }
+    
+    // No completion handlers needed
+    // The interactor will inform the presenter once it's ready
+    func getUsers()
+}
+
+class UserInteactor: AnyInteractor {
+    var presenter: AnyPresenter?
+    
+    func getUsers() {
+        
+    }
+}
