@@ -21,7 +21,7 @@ protocol AnyInteractor {
     func getUsers()
 }
 
-class UserInteactor: AnyInteractor {
+class UserInteractor: AnyInteractor {
     var presenter: AnyPresenter?
     
     func getUsers() {

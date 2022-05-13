@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		AB22AA53282CB3EB00A196EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB22AA52282CB3EB00A196EF /* AppDelegate.swift */; };
 		AB22AA55282CB3EB00A196EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB22AA54282CB3EB00A196EF /* SceneDelegate.swift */; };
-		AB22AA57282CB3EB00A196EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB22AA56282CB3EB00A196EF /* ViewController.swift */; };
 		AB22AA5C282CB3ED00A196EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB22AA5B282CB3ED00A196EF /* Assets.xcassets */; };
 		AB22AA5F282CB3ED00A196EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB22AA5D282CB3ED00A196EF /* LaunchScreen.storyboard */; };
 		AB22AA67282CB49E00A196EF /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB22AA66282CB49E00A196EF /* View.swift */; };
@@ -23,7 +22,6 @@
 		AB22AA4F282CB3EB00A196EF /* viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = viper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB22AA52282CB3EB00A196EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB22AA54282CB3EB00A196EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AB22AA56282CB3EB00A196EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AB22AA5B282CB3ED00A196EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB22AA5E282CB3ED00A196EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB22AA60282CB3ED00A196EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,7 +65,6 @@
 				AB22AA68282CB4C100A196EF /* viper */,
 				AB22AA52282CB3EB00A196EF /* AppDelegate.swift */,
 				AB22AA54282CB3EB00A196EF /* SceneDelegate.swift */,
-				AB22AA56282CB3EB00A196EF /* ViewController.swift */,
 				AB22AA5B282CB3ED00A196EF /* Assets.xcassets */,
 				AB22AA5D282CB3ED00A196EF /* LaunchScreen.storyboard */,
 				AB22AA60282CB3ED00A196EF /* Info.plist */,
@@ -161,7 +158,6 @@
 				AB22AA6C282CB4F600A196EF /* Presenter.swift in Sources */,
 				AB22AA67282CB49E00A196EF /* View.swift in Sources */,
 				AB22AA6E282CB50200A196EF /* Entity.swift in Sources */,
-				AB22AA57282CB3EB00A196EF /* ViewController.swift in Sources */,
 				AB22AA6A282CB4E500A196EF /* Interactor.swift in Sources */,
 				AB22AA53282CB3EB00A196EF /* AppDelegate.swift in Sources */,
 				AB22AA55282CB3EB00A196EF /* SceneDelegate.swift in Sources */,

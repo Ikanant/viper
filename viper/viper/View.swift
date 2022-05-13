@@ -44,9 +44,17 @@ class UserViewController: UIViewController, AnyView, UITableViewDelegate, UITabl
     }
     
     func update(with users: [User]) {
-        <#code#>
+        // TODO
     }
     func update(with error: String) {
-        <#code#>
+        // TODO
+    }
+    
+    // Table - Conform to the protocols I referenced for the controller (UITableViewDataSource)
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
     }
 }
