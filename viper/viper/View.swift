@@ -17,6 +17,7 @@ protocol AnyView {
     // Should have a reference to my Presenter
     var presenter: AnyPresenter? { get set }
     
+    var users: [User] { get set }
     
     func update(with users: [User]) // Will show the list of Users retrieved from the API
     func update(with error: String) // Will show whatever error we will want to show in the ViewController
@@ -36,6 +37,8 @@ class UserViewController: UIViewController, AnyView, UITableViewDelegate, UITabl
         return table
     }()
     
+    var users: [User] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBlue
@@ -50,17 +53,35 @@ class UserViewController: UIViewController, AnyView, UITableViewDelegate, UITabl
     }
     
     func update(with users: [User]) {
-        // TODO
+        print ("GOT RESULTS")
+        
+        // This is not enough
+        // self.users = users
+        
+        // We want to do the change on the MAIN THREAD
+        DispatchQueue.main.async {
+            self.users = users
+            self.tableView.reloadData()
+            self.tableView.isHidden = false
+        }
     }
     func update(with error: String) {
-        // TODO
+        // Print the error if it got returned
+        print(error)
     }
     
     // Table - Conform to the protocols I referenced for the controller (UITableViewDataSource)
+    // We need this function to return the NUMBER OF ROWS
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return users.count
     }
+    
+    // Properly DEQUE the cell... I am not 100% what dequeue does... so:
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        // Returns a reusable table-view cell object for the specified reuse identifier and adds it to the table.
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = users[indexPath.row].name
+        return cell
     }
 }
